@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const AppointmentForm = () => {
   return (
     <div className="w-full flex justify-center items-center min-h-screen">
-      <div className="w-80%">
+      <div className="lg:w-80% w-full mx-8 my-12">
         <div>
           <h1 className="lg:text-3xl text-xl font-bold text-[#428ce2]">
             BOOK AN APPOINTMENT
@@ -12,7 +12,7 @@ const AppointmentForm = () => {
             Please fill out the form below to book your appointment.
           </h1>
         </div>
-        <div className="grid grid-cols-2 gap-10 mt-6">
+        <div className="grid lg:grid-cols-2 lg:gap-10 gap-2 mt-6">
           <div className="flex flex-col gap-2">
             <div className="grid grid-cols-2 gap-2">
               <div>
@@ -20,7 +20,7 @@ const AppointmentForm = () => {
                 <input
                   type="text"
                   className="mt-1 block w-full rounded-md border border-[#b9cce1] bg-white text-sm p-1.5"
-                  placeholder="Enter your first name"
+                  placeholder="Enter first name"
                   required
                 />
               </div>
@@ -29,7 +29,7 @@ const AppointmentForm = () => {
                 <input
                   type="text"
                   className="mt-1 block w-full rounded-md border border-[#b9cce1] bg-white text-sm p-1.5"
-                  placeholder="Enter your last name"
+                  placeholder="Enter last name"
                   required
                 />
               </div>
@@ -125,7 +125,7 @@ const AppointmentForm = () => {
           </div>
         </div>
         <div className="flex justify-center mt-6">
-          <Link to="/appointment-confirmation" className="bg-[#428ce2] text-white py-1.5 px-20 rounded-md">
+          <Link to="/appointment-confirmation" className="bg-[#428ce2] text-white py-1.5 lg:px-20 px-15 rounded-md">
             Book Appointment
           </Link>
         </div>

@@ -1,8 +1,9 @@
 import primeCareLogo from "../assets/Images/primeCare-logo.png";
+import { Link } from "react-router-dom";
 
 const AppointmentPatient = () => {
   return (
-    <button className="min-h-screen w-full">
+    <Link to="/appointment-form" className="min-h-screen w-full">
       <div className="w-full min-h-screen flex flex-wrap justify-center items-center">
         <div className="text-center">
           <h1 className="lg:text-lg text-sm mb-4">Welcome to</h1>
@@ -20,7 +21,7 @@ const AppointmentPatient = () => {
       <h1 className="fixed bottom-20 w-full text-[#428ce2] text-center lg:text-lg text-sm">
         Tap anywhere to start
       </h1>
-    </button>
+    </Link>
   );
 };
 

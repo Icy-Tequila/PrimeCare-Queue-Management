@@ -1,4 +1,15 @@
 @import "tailwindcss";
+
 body {
     background-color: #f6faff;
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+select:focus,
+a:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #428ce2;
+  transition: box-shadow 0.2s ease;
 }

@@ -4,6 +4,8 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import './index.css'
 import App from './App.jsx'
 import AppointmentPatient from './Pages/Appointment.jsx';
+import AppointmentForm from './Pages/AppointmentForm.jsx';
+import AppointmentConfirmation from './Pages/Appointmentconfirmation.jsx';
 import LobbyScreen from './Pages/Lobby.jsx';
 import WalkInPatient from './Pages/WalkIn.jsx'; 
 import Admin from './Pages/Admin.jsx';
@@ -16,6 +18,14 @@ const router = createBrowserRouter([
   {
     path: "/appointment",
     element: <AppointmentPatient />,
+  },
+  {
+    path: "/appointment-form",
+    element: <AppointmentForm />,
+  },
+  {
+    path: "/appointment-confirmation",
+    element: <AppointmentConfirmation />,
   },
   {
     path: "/walk-in",
